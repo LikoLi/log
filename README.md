@@ -35,5 +35,17 @@ log4j.appender.console.layout=org.apache.log4j.PatternLayout
 - 配置layout 格式
 ```
 # Set the layout format pattern
-log4j.appender.console.layout.ConversionPattern=[%-5p]
+log4j.appender.console.layout.ConversionPattern=[%-5p][%d{yyyy-MM-dd HH:mm:ss}] %c  %L %m%n
+/*
+ * [%-5p]
+ *  [] : 正常显示
+ *  -  : 左对齐(不写符号右对齐, 注意不能写+号, 因为+不能被解析)
+ *  5  : 左右括号里面的字符数量, 不足补空格, 多余不处理 
+ * 	%p : 显示日志级别
+ *  %d{yyyy-MM-dd HH:mm:ss} : 日志记录时间及格式化方式
+ *  %c : logger 的全类名
+ *  %L : line number
+ *  %m : message
+ *  %n : change line
+ */
 ```
