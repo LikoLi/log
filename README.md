@@ -49,3 +49,6 @@ log4j.appender.console.layout.ConversionPattern=[%-5p][%d{yyyy-MM-dd HH:mm:ss}] 
  *  %n : change line
  */
 ```
+
+## Log4j2 配置
+> log4j2.xml
